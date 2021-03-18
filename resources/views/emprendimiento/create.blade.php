@@ -78,9 +78,9 @@
   </select>
   <div class="mb-3">
   <label for="" class="form-label">Ubicación Geográfica</label>
-  <div id="map"></div>
+  <div id="map" style="height: 350px;"></div>
   <div class="mb-3">
-    <div class="mb-3">
+  
     <label for="" class="form-label">Latitud</label>
     <input id="latitud" name="latitud" type="text"  class="form-control">
     <br>
