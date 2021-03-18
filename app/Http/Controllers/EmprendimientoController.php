@@ -60,6 +60,8 @@ class EmprendimientoController extends Controller
 
         $emprendimientos->usuario_id = Auth::id();
         $emprendimientos->tipoempresa_id = $request->get('tipoempresa_id');
+        $emprendimientos->latitud = $request->get('latitud');
+        $emprendimientos->longitud = $request->get('longitud');
         $emprendimientos->save();
         
 
@@ -118,6 +120,8 @@ class EmprendimientoController extends Controller
         $emprendimiento->logo= $request->get('logo');
             //    $emprendimiento->usuario_id = auth()->user()->id;
         $emprendimiento->tipoempresa_id = $request->get('tipoempresa_id');
+        //$emprendimientos->latitud = $request->get('latitud');
+        //$emprendimientos->longitud = $request->get('longitud');
         $emprendimiento->save();
 
         return redirect('/emprendimientos');
