@@ -18,9 +18,14 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', function () {
+    return view('home');
+})->name('home');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
 
 
 Route::resource('articulos', 'App\Http\Controllers\ArticuloController')->middleware('auth');
