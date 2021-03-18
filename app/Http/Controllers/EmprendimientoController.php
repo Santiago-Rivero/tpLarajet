@@ -62,6 +62,9 @@ class EmprendimientoController extends Controller
         $emprendimientos->tipoempresa_id = $request->get('tipoempresa_id');
         $emprendimientos->latitud = $request->get('latitud');
         $emprendimientos->longitud = $request->get('longitud');
+
+
+
         $emprendimientos->save();
 
         
@@ -123,6 +126,8 @@ class EmprendimientoController extends Controller
         $emprendimiento->tipoempresa_id = $request->get('tipoempresa_id');
         $emprendimiento->latitud = $request->get('latitud');
         $emprendimiento->longitud = $request->get('longitud');
+       
+       
         $emprendimiento->save();
 
         return redirect('/emprendimientos');
