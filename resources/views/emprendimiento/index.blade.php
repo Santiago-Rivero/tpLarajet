@@ -42,7 +42,7 @@
         <td>{{$emprendimiento->sitio_web}}</td>
         <td>{{$emprendimiento->instagram}}</td>
         <td>{{$emprendimiento->facebook}}</td>
-        <td>{{$emprendimiento->telefono}}</td>
+        <td>{{$emprendimiento->nro_telefono}}</td>
         <td><img src="images/{{$emprendimiento->logo}}" weigt="40" alt=""></td>
         <td>{{$emprendimiento->tipoempresa_id}}</td>
         <td>{{$emprendimiento->latitud}}</td>
