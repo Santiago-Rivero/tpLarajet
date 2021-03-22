@@ -14,7 +14,6 @@
 <a href="articulos/create" class="btn btn-primary ">CREAR</a>
 <br>
 <p></p>
-<div class="col-md-4 text-right"> <button id="exportar" class="btn btn-primary"><i class="fas fa-file-export    "></i>> </div>
 <table id="articulos" class="table table-striped table-bordered shadow-lg mt-4" style="width:100%">
   <thead class="bg-primary text-white" >
     <tr>
