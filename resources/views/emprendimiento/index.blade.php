@@ -29,8 +29,6 @@
                         <th scope="col">Teléfono</th>
                         <th scope="col">Logo</th>
                         <th scope="col">Tipo de Empresa</th>
-                        <th scope="col">Latitud</th>
-                        <th scope="col">Longitud</th>
                         <th scope="col">Acciones</th>
                       </tr>
                     </thead>
@@ -48,8 +46,6 @@
                           <td>{{$emprendimiento->nro_telefono}}</td>
                           <td><img src="images/{{$emprendimiento->logo}}" weigt="40" alt=""></td>
                           <td>{{$emprendimiento->tipoempresa_id}}</td>
-                          <td>{{$emprendimiento->latitud}}</td>
-                          <td>{{$emprendimiento->longitud}}</td>
                           <td>
                           <form action="{{ route('emprendimientos.destroy',$emprendimiento->id) }}" method="POST">
                             <a href="/emprendimientos/{{$emprendimiento->id}}/edit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
